@@ -8,9 +8,9 @@
 [![Commits](https://img.shields.io/github/commit-activity/w/alexbaeza/k8s-ci-cd?style=flat)](https://github.com/alexbaeza/k8s-ci-cd/pulse)
 [![Issues](https://img.shields.io/github/issues/alexbaeza/k8s-ci-cd.svg?style=flat)](https://github.com/alexbaeza/k8s-ci-cd/issues)
 [![Releases](https://img.shields.io/github/v/release/alexbaeza/k8s-ci-cd.svg?style=flat)](https://github.com/alexbaeza/k8s-ci-cd/releases)
-[![Docker Pulls](https://img.shields.io/docker/pulls/betterdev/k8s-ci-cd?logo=docker&label=pulls)](https://hub.docker.com/r/betterdev/k8s-ci-cd/)
-[![Docker Stars](https://img.shields.io/docker/stars/betterdev/k8s-ci-cd?logo=docker&label=stars)](https://hub.docker.com/r/betterdev/k8s-ci-cd/)
-[![Docker Image Size](https://img.shields.io/docker/image-size/betterdev/k8s-ci-cd?logo=docker&label=size)](https://hub.docker.com/r/betterdev/k8s-ci-cd/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/croymen/k8s-ci-cd?logo=docker&label=pulls)](https://hub.docker.com/r/croymen/k8s-ci-cd/)
+[![Docker Stars](https://img.shields.io/docker/stars/croymen/k8s-ci-cd?logo=docker&label=stars)](https://hub.docker.com/r/croymen/k8s-ci-cd/)
+[![Docker Image Size](https://img.shields.io/docker/image-size/croymen/k8s-ci-cd?logo=docker&label=size)](https://hub.docker.com/r/croymen/k8s-ci-cd/)
 </div>
 
 ## Tools Included
@@ -30,7 +30,7 @@
 1. Pull the image
 
 ```shell
-docker pull betterdev/k8s-ci-cd:latest
+docker pull croymen/k8s-ci-cd:latest
 ```
 
 2. executing Bash Shell in Container
@@ -38,7 +38,7 @@ docker pull betterdev/k8s-ci-cd:latest
 To open a bash shell within the container:
 
 ```shell
-docker run -it betterdev/k8s-ci-cd bash
+docker run -it croymen/k8s-ci-cd bash
 ```
 
 3. Utilize the included tools (`kubectl`, `kustomize`, `Helm`, `kubeconform`, etc.) to manage your Kubernetes
@@ -58,7 +58,7 @@ name: My Github action workflow
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: betterdev/k8s-ci-cd:latest # <-- Use this docker image 
+   container: croymen/k8s-ci-cd:latest # <-- Use this docker image 
     steps:
       - run: echo "Running v1.0.0 of this awesome 🐳 Docker image"
 
