@@ -18,7 +18,7 @@ module.exports = {
         {
             "path": "semantic-release-docker-buildx",
             "buildArgs": {"COMMIT_TAG": "$GIT_SHA"},
-            "imageNames": ["betterdev/k8s-ci-cd"],
+            "imageNames": ["croymen/k8s-ci-cd"],
             "platforms": [
                 "linux/amd64",
                 "linux/arm64",
