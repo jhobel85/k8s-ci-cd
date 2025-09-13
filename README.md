@@ -1,5 +1,5 @@
 <div style="text-align: center" align="center">
-
+//modified by jhobel85
 # All-in-one Kubernetes CI/CD Docker Image
 
 > This all-in-one Docker image is designed to provide a minimal environment with all the necessary tools for a CI/CD
