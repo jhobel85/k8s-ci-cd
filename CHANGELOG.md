@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/jhobel85/k8s-ci-cd/compare/v1.0.0...v1.1.0) (2025-09-13)
+
+
+### Features
+
+* add a sample feature to trigger release ([4432a63](https://github.com/jhobel85/k8s-ci-cd/commit/4432a636b00b6cf85719207a3beb9ba2c7d38104))
+
 # 1.0.0 (2025-09-13)
 
 
