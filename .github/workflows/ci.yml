@@ -1,0 +1,12 @@
+name: My Github action workflow
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container: croymen/k8s-ci-cd:latest
+    steps:
+      - run: echo "Running v1.0.0 of this awesome 🐳 Docker image"
