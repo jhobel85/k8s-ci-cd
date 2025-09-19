@@ -38,3 +38,15 @@ RUN ./binary_installer.sh kubeconform tar "https://github.com/yannh/kubeconform/
 RUN ./binary_installer.sh op zip "https://cache.agilebits.com/dist/1P/op2/pkg/v${OP_1PASSWORD_CLI_VERSION}/op_linux_{INJECT_ARCH}_v${OP_1PASSWORD_CLI_VERSION}.zip" /usr/bin/ "-v"
 
 WORKDIR /apps
+
+FROM alpine:latest
+COPY apps/helloworld/app.sh /app.sh
+CMD ["sh", "/app.sh"]
+
+FROM python:3.12-slim
+COPY apps/helloworld/app.py /app.py
+CMD ["python", "/app.py"]
+
+FROM node:20-alpine
+COPY apps/helloworld/app.js /app.js
+CMD ["node", "/app.js"]
