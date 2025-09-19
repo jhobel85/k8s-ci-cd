@@ -52,8 +52,7 @@ COPY apps/helloworld/app.js /app.js
 CMD ["node", "/app.js"]
 
 FROM golang:1.21-alpine
-WORKDIR /apps/go/
-COPY main.go .
+COPY apps/go/main.go /main.go
 RUN go build -o server main.go
 EXPOSE 8080
 CMD ["./server"]
